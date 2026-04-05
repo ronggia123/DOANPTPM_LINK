@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Hỗ Trợ Sinh Viên</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      🎓 Chatbot Hỗ Trợ Sinh Viên
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message bot">
+        Xin chào 👋 Tôi có thể hỗ trợ bạn về đăng ký môn, tín chỉ, lịch học, học phí, điểm...
+      </div>
+    </div>
+
+    <div class="quick-questions">
+      <button onclick="quickAsk('Cách đăng ký môn')">Đăng ký môn</button>
+      <button onclick="quickAsk('Bao nhiêu tín chỉ')">Tín chỉ</button>
+      <button onclick="quickAsk('Xem lịch học ở đâu')">Lịch học</button>
+      <button onclick="quickAsk('Cách xem học phí')">Học phí</button>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="msg" placeholder="Nhập câu hỏi của bạn..." />
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
